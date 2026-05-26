@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Top Row: Vehicle Icon + Info + Amount + Menu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Truck Icon -->
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_truck"
+                android:scaleType="fitCenter"
+                android:contentDescription="Vehicle" />
+
+            <!-- Vehicle Name + Date + Order ID -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/tvVehicleType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Four Wheeler"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:id="@+id/tvDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05 Feb, 4:46 PM"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" | "
+                        android:textSize="12sp"
+                        android:textColor="@color/text_grey" />
+
+                    <TextView
+                        android:id="@+id/tvOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order ID: #ORD12345"
+                        android:textSize="12sp"
+                        android:textColor="@color/text_grey" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Amount -->
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 229.0"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"
+                android:layout_marginEnd="4dp" />
+
+            <!-- Three Dot Menu -->
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_more_vert"
+                android:background="@null"
+                android:contentDescription="More options" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_grey"
+            android:layout_marginVertical="10dp" />
+
+        <!-- Pickup Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_location_green"
+                android:contentDescription="Pickup"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvPickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="741, Gumanwara"
+                android:textSize="13sp"
+                android:textColor="@color/text_dark" />
+        </LinearLayout>
+
+        <!-- Drop Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_location_red"
+                android:contentDescription="Drop"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvDrop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00, Main Rd, Shivaji Nagar, Jhansi, Uttar Pradesh 284001, India"
+                android:textSize="13sp"
+                android:textColor="@color/text_dark" />
+        </LinearLayout>
+
+        <!-- Bottom Row: Status + Invoice + Book Again -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Status Badge -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELLED"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Invoice Button -->
+            <Button
+                android:id="@+id/btnInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="↓ Invoice"
+                android:textSize="12sp"
+                android:textColor="@color/text_dark"
+                android:background="@drawable/bg_invoice_button"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="12dp"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+            <!-- Book Again Button -->
+            <Button
+                android:id="@+id/btnBookAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Book Again"
+                android:textSize="12sp"
+                android:textColor="@color/text_dark"
+                android:textStyle="bold"
+                android:background="@drawable/bg_book_again_button"
+                android:paddingHorizontal="12dp"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

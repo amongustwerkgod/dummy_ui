@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_grey">#F5F5F5</color>
+    <color name="banner_blue">#EEF2FF</color>
+    <color name="black">#000000</color>
+    <color name="border_grey">#DDDDDD</color>
+    <color name="divider_grey">#EEEEEE</color>
+    <color name="green">#2E7D32</color>
+    <color name="green_light">#E8F5E9</color>
+    <color name="red">#D32F2F</color>
+    <color name="red_light">#FFEBEE</color>
+    <color name="text_dark">#1A1A1A</color>
+    <color name="text_grey">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow_dark">#FFB300</color>
+    <color name="yellow_primary">#FFC107</color>
+    <string name="all_orders">All Orders</string>
+    <string name="app_name">MyOrders</string>
+    <string name="book_again">Book Again</string>
+    <string name="booked_again">Booked Again</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="completed">Completed</string>
+    <string name="filter">Filter</string>
+    <string name="invoice">Invoice</string>
+    <string name="my_orders">My Orders</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_payments">Payments</string>
+    <string name="orders_subtitle">View your completed trips here. You can download invoices or quickly book the same order again.</string>
+    <string name="search_hint">Search by Order ID / Location</string>
+    <string name="sort">Sort</string>
+    <style name="Theme.MyOrders" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/yellow_primary</item>
+        <item name="colorPrimaryVariant">@color/yellow_dark</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="colorSecondary">@color/yellow_primary</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:statusBarColor">@color/yellow_primary</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
