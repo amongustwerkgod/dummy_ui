@@ -6,16 +6,16 @@ A pixel-accurate implementation of the "My Orders" screen for the OceanX Agency 
 
 ## Features Implemented
 
-- ✅ Native Android (Kotlin + XML) — no Flutter/React Native
-- ✅ RecyclerView for order listing with CardView items
-- ✅ Four filter tabs: All Orders, Completed, Cancelled, Booked Again
-- ✅ Live search by Order ID or Location
-- ✅ Info banner with dismiss button
-- ✅ Bottom Navigation (Home, Orders, Payments, Account)
-- ✅ Invoice & Book Again buttons with click effects
-- ✅ Color-coded status badges (red = Cancelled, green = Completed, yellow = Booked Again)
-- ✅ Yellow header matching reference design
-- ✅ Clean, well-structured code
+-  Native Android (Kotlin + XML) — no Flutter/React Native
+-  RecyclerView for order listing with CardView items
+-  Four filter tabs: All Orders, Completed, Cancelled, Booked Again
+-  Live search by Order ID or Location
+-  Info banner with dismiss button
+-  Bottom Navigation (Home, Orders, Payments, Account)
+-  Invoice & Book Again buttons with click effects
+-  Color-coded status badges (red = Cancelled, green = Completed, yellow = Booked Again)
+-  Yellow header matching reference design
+-  Clean, well-structured code
 
 ---
 
@@ -46,9 +46,6 @@ app/src/main/
 └── AndroidManifest.xml
 ```
 
----
-
-## Setup Steps
 
 ### Prerequisites
 - Android Studio Hedgehog (2023.1.1) or newer
@@ -56,24 +53,6 @@ app/src/main/
 - Android SDK 34
 - Kotlin plugin installed
 
-### Steps to Run
-
-1. **Open Android Studio**
-
-2. **Open the project:**
-   - File → Open → Select the `MyOrdersApp` folder
-
-3. **Wait for Gradle sync** to complete (it downloads dependencies automatically)
-
-4. **Add a launcher icon** (Android Studio requires this):
-   - Right-click `res` → New → Image Asset
-   - Choose any icon or use the default
-
-5. **Run the app:**
-   - Connect an Android device (Android 7.0+) or start an emulator
-   - Press the ▶ Run button or `Shift+F10`
-
----
 
 ## Dependencies (auto-downloaded by Gradle)
 
